@@ -1,7 +1,7 @@
 
 # My Portfolio Website
 
-Welcome to my portfolio website! This website showcases my skills, projects, and experiences as a [Your Profession or Field] professional.
+Welcome to my portfolio website! This website showcases my skills, projects, and experiences as a professional software devloper.
 
 ## Table of Contents
 1. [Introduction](#introduction)
