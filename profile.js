@@ -1,5 +1,5 @@
 function letsChat(){
-    window.open("https://wa.me/919302771737",'_blank'); 
+    window.open("https://t.me/Priyanshuk_01",'_blank'); 
 }
 
 
@@ -34,4 +34,3 @@ function lightUP() {
 window.onload = function() {
     lightUP();
 }
-
