@@ -28,9 +28,11 @@ function lightUP() {
         }
 
     } 
-  setTimeout(lightUP, 700); 
+  setTimeout(lightUP, 300); 
 }
 
 window.onload = function() {
     lightUP();
 }
+
+
