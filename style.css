@@ -24,12 +24,14 @@
   html {
     scroll-behavior: smooth;
     user-select: none;
+    /* scroll-snap-type: y mandatory; */
+    scroll-padding-top:var(--scroll-val);
   }
   
 body{
     background-color: #09101a;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+   
 }
 *{
     font-family: "Poppins", sans-serif;
@@ -63,6 +65,7 @@ a:hover{
 .mainDiv{
     margin-top:3%;
     height:100vh;
+    /* scroll-snap-align:start; */
     /* background-color: aliceblue; */
 }
 
@@ -72,10 +75,10 @@ a:hover{
     width:110%;
     
 }
-.container-fluid{
+/* .container-fluid{
     
-    scroll-snap-stop: always;
-}
+   
+} */
 
 .auto-text{
     font-family: "Jersey 25", sans-serif;
@@ -154,7 +157,6 @@ p{
     align-items: center;
     justify-content:center;
     flex-direction: column;
-    overflow: hidden;
 }
 @keyframes blink {
     0%{filter: drop-shadow(0px 5px 5px  #6554AF);}
@@ -186,6 +188,7 @@ p{
 }
 
 .title {
+    margin-top:-30px;
     font-family: "Black Han Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -203,10 +206,10 @@ p{
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 40px;
-    margin: 10px 0;
+    font-size: 30px;
   }
 .projectPane{
+    margin-top:-10px;
     height:90%;
     display: flex;
     align-items: center;
@@ -218,7 +221,6 @@ p{
     background-size: cover;
     border-radius:15px;
 }
-
 .card-img-top{
     height:50%;
     
@@ -242,23 +244,61 @@ footer{
 
   
 @media screen and (max-width: 1200px){
-    .devPic{
-        display: none;
+    body{
+        overflow-x: hidden;
     }
-    
-}
-
-@media  only screen and (max-width: 858px){
-    
-    .langContainer{
+    .homediv{
+        width:100vw;
         flex-direction: column;
-        height:80%;
-        overflow-y:scroll ;
+        flex-direction: column-reverse;
+        /* background-color: #198754; */
     }
-    .technologyCard{
-        width:100%;
-        height:50%;
+
+    .userIntrodiv{
+        z-index:9;
+        margin-top:27rem;
     }
+    .auto-text{
+        font-size: 25px;
+    }
+    .userpicDiv{
+        margin-right:-25px;
+        background-color: Gray ;
+        margin-top:6rem;
+        width:96vw;
+        height:40vh;
+        position: absolute;
+        z-index:3;
+        overflow: hidden;
+    }
+    .devPic{
+        margin-bottom:-40px;
+        width: 100%;
+    }
+    .buttonSpace{
+        margin-right:-10px;
+        width:100vw;
+    }
+    .buttons{
+        font-size:13px;
+        height: 60%;
+        width:60%;
+    }
+    /* #technology{
+        background-color: blue;
+        margin-bottom:-200px;
+    } */
+   .projectPane{
+    width:100vw;
+    margin-left:-40px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+   }
+   /* .card{
+    width:10rem;
+   } */
+    
+    
 }
 
 
@@ -279,9 +319,10 @@ footer{
 
 }
 .content{
+    padding:5px;
     background-color: #198754;
     height:100%;
-    width:40%;
+    width:35%;
     background: rgba( 255, 255, 255, 0.3 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3.5px );
@@ -289,4 +330,41 @@ footer{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+input{
+    width:100%;
+    border-radius:10px;
+    height:2.5rem;
+    /* border: none; */
+    padding:3px;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+.formbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    gap:10%;
+    width:100%;
+    height:15vh;
+}
+.FormButtonsForAction{
+    width:50%;
+    height: 70%;
+    border-radius:25px;
+    border: solid 1px black;
+}
+.fa{
+    color: #0d0f12;
+    transition: transform 0.6s ease-in-out;
+  }
+  .fa:hover{
+    transform: scale(1.2);
+  }
+.socialhadle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height:30%;
+}

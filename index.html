@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="home">
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="NAVBAR">
     <div class="container-fluid">
       <a class="navbar-brand text-danger" href="https://github.com/priyanshu-k1" target="_blank"
         style="min-width:100px;">
@@ -34,7 +34,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-success active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link text-success"  href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-success" href="#technology">Expertise</a>
@@ -52,8 +52,8 @@
   </nav>
 
 
-  <div class="container-fluid row d-flex align-items-center justify-content-end mainDiv" id="home">
-    <div class="col-xl-6 col-sm-12 row d-flex align-items-center justify-content-end">
+  <div class="container-fluid row d-flex align-items-center justify-content-end mainDiv homediv" id="home">
+    <div class="col-xl-6 col-sm-12 row d-flex align-items-center justify-content-end userIntrodiv ">
       <h2 class="text-light">Hi,I'm <span class="auto-text text-success"></span></h2>
       <h3 id="h3Text">A devloper all you need.</h3>
       <p class="text-light">
@@ -72,7 +72,7 @@
       </div>
 
     </div>
-    <div class="col-xl-6 col-sm-12 d-flex align-items-end  ">
+    <div class="col-xl-6 col-sm-12 d-flex align-items-end userpicDiv">
       <img src="res/dev-pic.png" alt="dev-pic" class="devPic mt-4">
     </div>
   </div>
@@ -80,7 +80,7 @@
 
   <div class="container-fluid mt-5 p-5  mainDiv" id="technology">
     <div class="cards container-fluid">
-      <h1 class="ml6" align="center">
+      <h1 class="" align="center">
         <span class="spanText" id="text1">T</span>
         <span class="spanText" id="text2">e</span>
         <span class="spanText" id="text3">c</span>
@@ -124,15 +124,12 @@
       </div>
     </div>
   </div>
- 
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <div class="container-fluid mt-5 p-5  mainDiv" id="Projects">
+  <div class="container-fluid mt-5 p-5  mainDiv" id="Projects" >
     <div class="title "><h1>Projects</h1></div>
      <div class="projectPane container-fluid p-4">
       <!-- Project1 -->
-      <div class="card" style="width: 18rem;">
+      <div class="card" >
         <img class="card-img-top" src="res/music-player.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Jazz PLayer</h5>
@@ -168,22 +165,44 @@
       </div>
      </div>
   </div>
-  <div class="container-fluid mt-5 p-2  mainDiv" id="contact">
+  <div class="container-fluid p-3  mainDiv contactdiv" id="contact">
     <div class="envelope">
-           
+      <h1>Let's get in touch</h1>
       <div class="content">
+        <form action="mailto:priyanshukumar0419@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" name="name">
+          <label for="mail">Mail:</label>
+          <input type="text" name="mail">
+          <label for="text">Message:</label>
+          <input type="text" name="comment" size="150">
+           <div class="formbutton">
+            <input class="FormButtonsForAction buttons" type="submit" value="Send">
+            <input class="FormButtonsForAction buttons" type="reset" value="Reset">
+           </div>
+          </form>
+          <div class="socialhadle">
+            <a href="https://github.com/priyanshu-k1"  target="_blank"><i class="fa fa-github  fa-3x" aria-hidden="true" ></i></a>
+            <a href="https://www.instagram.com/why.not.priyanshuuuu/?hl=en"  target="_blank"><i class="fa fa-instagram  fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/priyanshu-kumar-97898424a/"  target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+            <a href="https://leetcode.com/u/priyanshu-k1/"  target="_blank"><i class="fa fa-code fa-3x" aria-hidden="true"></i></a>
+          </div>
+        
       </div>
     </div>
 
   </div>
 
-  <footer >
+  <!-- <footer >
+    <div class="rounded-circle">
+      <h3 style="background-color: #151515;text-align: center;" id="navH3" class="rounded-circle">KP</h3>
+    </div> -->
 
     <!-- ADD HERE THE CONTENT OF THE FOOTER ,
         LOGO MAYBE COMPANY NAME ,
         SOCIAL HANDLE  INKS WITH ICONS. -->
 
-  </footer>
+  <!-- </footer> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

@@ -1,3 +1,10 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sroller= document.getElementById("NAVBAR").offsetHeight; 
+    console.log(sroller)
+    document.documentElement.style.setProperty('--scroll-val',(sroller+'px'))
+  });
+
 function letsChat(){
     window.open("https://t.me/Priyanshuk_01",'_blank'); 
 }
