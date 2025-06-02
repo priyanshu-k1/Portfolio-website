@@ -1,4 +1,6 @@
-
+window.onload = function () {
+      window.location.href = "https://priyanshu-k1.github.io/Portfolio_Priyanshu/";
+    };
 document.addEventListener('DOMContentLoaded', function() {
     const sroller= document.getElementById("NAVBAR").offsetHeight; 
     console.log(sroller)
